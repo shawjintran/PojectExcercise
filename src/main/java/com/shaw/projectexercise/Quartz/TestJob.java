@@ -11,7 +11,7 @@ import org.quartz.impl.StdSchedulerFactory;
 
 public class TestJob {
 
-  public static void main(String[] args) {
+  public static void test(String[] args) {
     JobDetail jobDetail= JobBuilder.newJob(MyJob.class)
         .withIdentity("job1","group1")//必须设置  一个组里，job名不能一样
         .usingJobData("job","xy")
